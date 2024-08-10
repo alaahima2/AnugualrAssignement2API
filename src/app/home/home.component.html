@@ -1,0 +1,37 @@
+<div class="bg-opacity-75 bg-dark">
+    <div class="container">
+
+        <div class = row>
+          
+         
+            @for (Movie of MovieList2; track $index) {
+    
+                
+                <div class="col-md-4 g-2">
+                    <div class="p-2 rounded-2 bg-warning h-50">
+                        <img [src]="img_prefex+Movie.poster_path"  class="w-100 rounded-2" alt="Movie Poster">
+                        <h3>{{Movie.title ? Movie.title :Movie.name }}</h3>
+                       <h6> Movie Overview:</h6>
+                       <p>{{Movie.overview}}</p>
+                       <p>Rate: {{Movie.vote_average}}</p>
+          
+                    </div>
+                  </div>
+    
+            }
+             
+                
+            
+    
+    
+            
+    
+    
+        </div>
+    
+    
+    </div>
+    
+
+</div>
+
